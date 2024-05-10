@@ -1,0 +1,69 @@
+p {
+  margin: 0px;
+  padding: 0px;
+}
+div.App {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  align-items: center;
+  width: 100%;
+  background: #341474;
+  height: 100vh;
+}
+
+.todo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  justify-content: center;
+}
+.left-box,
+.right-box {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hello-world {
+  text-align: center;
+  color: blue;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+}
+.todo-list-container {
+  width: 100%;
+}
+.todo-item {
+  width: 100%;
+  padding: 4px 10px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  & .todo-text {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+  }
+  & .todo-text:focus {
+    outline: none;
+  }
+}
+.color-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.color-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
